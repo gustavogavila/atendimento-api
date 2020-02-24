@@ -6,7 +6,7 @@ public enum DiaSemana {
 
 	private String descricao;
 
-	DiaSemana(String descricao) {
+	private DiaSemana(String descricao) {
 		this.descricao = descricao;
 	}
 
