@@ -2,6 +2,7 @@ package atendimentoapi.models;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -18,6 +19,7 @@ public class Servico implements Serializable {
 	@Id
 	private Long id;
 	
+	@Column(nullable = false)
 	private String nome;
 	
 	private String descricao;

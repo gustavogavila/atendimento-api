@@ -3,6 +3,7 @@ package atendimentoapi.models;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
@@ -21,8 +22,10 @@ public class Agendamento implements Serializable {
 	@Id
 	private Long id;
 	
+	@Column(nullable = false)
 	private LocalDateTime dataHoraInicio;
 
+	@Column(nullable = false)
 	private LocalDateTime dataHoraFim;
 
 	private Integer avaliacaoCliente;
